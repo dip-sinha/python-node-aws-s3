@@ -31,7 +31,7 @@ while True:
             print("Image saved!")
             S3 = boto3.client('s3')
             SOURCE_FILENAME = 'saved_img.jpg'
-            BUCKET_NAME = 'santa-claus'
+            BUCKET_NAME = 'bucket_name'
             print('sending file to aws s3 bucket')
             # Uploads the given file using a managed uploader, which will split up large
             # files automatically and upload parts in parallel.
